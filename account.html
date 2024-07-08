@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+            <span class="bold">Workspace</span>
+        </div>
+        <a href="index.html"><img src="home_icon.png" alt="Home Icon"> Home</a>
+        <a href="customers.html"><img src="customers_icon.png" alt="Customers Icon"> Customers</a>
+        <a href="departments.html"><img src="departments_icon.png" alt="Departments Icon"> Departments</a>
+        <a href="media.html"><img src="media_icon.png" alt="Media Icon"> Media</a>
+        <a href="account.html" class="active bottom"><img src="account_icon.png" alt="Account Icon"> My Account</a>
+    </div>
+    <div class="content">
+        <div class="top-bar">
+            <input type="text" placeholder="Search in Account">
+        </div>
+        <div class="container">
+            <!-- Profile Image Container -->
+            <div class="profile-image-container">
+                <img id="profileImage" src="path-to-default-image.jpg" alt="Profile Image">
+                <input type="file" id="imageUpload" style="display:none;">
+                <label for="imageUpload" class="edit-icon">
+                    <i class="fa fa-pencil"></i> Change Image
+                </label>
+            </div>
+            
+            <form id="accountForm">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <div class="input-container">
+                        <input type="text" id="name" value="John Doe" readonly>
+                        <button type="button" class="edit-btn" onclick="editField('name')">Change</button>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <div class="input-container">
+                        <input type="email" id="email" value="example@gmail.com" readonly>
+                        <button type="button" class="edit-btn" onclick="editField('email')">Change</button>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <div class="input-container">
+                        <input type="text" id="phone" value="9134837948" readonly>
+                        <button type="button" class="edit-btn" onclick="editField('phone')">Change</button>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="dob">Date of Birth</label>
+                    <div class="input-container">
+                        <input type="date" id="dob" value="1999-07-16" readonly>
+                        <button type="button" class="edit-btn" onclick="editField('dob')">Change</button>
+                    </div>
+                </div>
+                
+                <div class="button-group">
+                    <button type="button" class="btn save-btn" onclick="saveForm()">Save</button>
+                    <button type="button" class="btn cancel-btn" onclick="clearForm()">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
