@@ -32,6 +32,7 @@ body {
     height: 50px;
     border-radius: 50%;
     margin-right: 10px;
+    background-color: #0056b3;
 }
 
 .sidebar .bold {
@@ -39,10 +40,16 @@ body {
 }
 
 .sidebar a {
-    display: block;
+    display: flex;
+    align-items: center;
     color: white;
     padding: 15px 20px;
     text-decoration: none;
+}
+
+.sidebar a img {
+    width: 40px; 
+    margin-right: 20px; 
 }
 
 .sidebar a.active {
@@ -80,13 +87,22 @@ body {
 }
 
 .top-bar button {
-    padding: 8px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 32px;
+    padding: 0px;
     margin-left: 10px;
     border: none;
     border-radius: 4px;
-    background-color: #007bff;
+    /* background-color: #007bff; */
     color: white;
     cursor: pointer;
+}
+
+.top-bar button img.searcher {
+    height: 30px; 
+    width: 30px; 
 }
 
 .top-bar button:hover {
@@ -100,12 +116,31 @@ body {
 
 .summary .box {
     flex: 1;
-    height: 80px;
+    height: 150px;
     padding: 10px;
     margin-right: 10px;
     text-align: center;
     background-color: #f0f0f0;
     border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+.summary .box .title {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.summary .box .number {
+    margin-bottom: 10px;
+    font-size: 35px; 
+    font-weight: bold;
+}
+
+.summary .box .number sub {
+    font-size: 16px; 
 }
 
 .rounded {
@@ -132,10 +167,28 @@ table th, table td {
     z-index: 1; // Ensure it's above table borders 
 }*/
 
-.media-heading {
-    background-color: #f0f0f0;
-    padding: 10px;
-    text-align: center;
+.media-heading,.department,.customer,.videos-heading,.images-heading,.audio-heading {  
+    height: 60px;
+    margin-bottom: 10px;;
+    padding:15px;
+    border-radius: 10px;
+}
+
+.videos-heading,.images-heading,.audio-heading {
+    background-color: rgb(245, 204, 128);
+}
+
+.customer{
+    background-color: #b5f0f8;
+}
+
+
+.department{
+    background-color: rgb(119, 219, 226);   
+}
+
+.media-heading{
+    background-color: pink; 
 }
 
 .media-container {
@@ -146,18 +199,37 @@ table th, table td {
 
 .media-box {
     flex: 1 0 22%;
-    height: 80px;
+    height: 120px;
     padding: 10px;
     margin-right: 10px;
     margin-bottom: 10px;
     text-align: center;
     background-color: #f0f0f0;
     border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+.media-box .title {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.media-box .number {
+    margin-bottom: 10px;
+    font-size: 24px; 
+    font-weight: bold;
+}
+
+.media-box .number sub {
+    font-size: 16px; 
 }
 
 .media-box1 {
     flex: 1 0 30%;
-    height: 100px;
+    height: 150px;
     padding: 10px;
     margin-right: 10px;
     margin-bottom: 10px;
@@ -165,7 +237,19 @@ table th, table td {
     background-color: #f0f0f0;
     border: 1px solid #ccc;
     border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.media-box1 img,
+.media-box1 video,
+.media-box1 audio {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px;
+}
+
 
 .navigator {
     margin-top: 20px;
@@ -243,12 +327,22 @@ table th, table td {
 }
 
 .edit-btn {
-    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    padding: 0px;
     border: none;
     background-color: #007bff;
     color: white;
     cursor: pointer;
     border-radius: 5px;
+}
+
+.edit-btn img {
+    width: 16px; 
+    height: 16px;
 }
 
 .button-group {
