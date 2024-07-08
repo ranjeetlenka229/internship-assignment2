@@ -21,7 +21,7 @@
     <div class="content">
         <div class="top-bar">
             <input type="text" id="search-input" placeholder="Search in Accounts">
-            <button id="search-button">Search</button>
+            <button id="search-button"><img class="searcher" src="searcher_icon.png" alt="Search"></button>
         </div>
         <div class="container">
             <!-- Profile Image Container -->
@@ -29,7 +29,7 @@
                 <img id="profileImage" src="account_icon.png" alt="Profile Image">
                 <input type="file" id="imageUpload" style="display:none;">
                 <label for="imageUpload" class="edit-icon">
-                    <i class="fa fa-pencil"></i> Change Image
+                    <i class="fas fa-pencil-alt"></i> Choose Photo
                 </label>
             </div>
             
@@ -38,28 +38,28 @@
                     <label for="name">Name</label>
                     <div class="input-container">
                         <input type="text" id="name" value="John Doe" readonly>
-                        <button type="button" class="edit-btn" onclick="editField('name')">Change</button>
+                        <button type="button" class="edit-btn" onclick="editField('name')"><img src="pencil_icon.png" alt="Change"></button>
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="email">Email</label>
                     <div class="input-container">
                         <input type="email" id="email" value="example@gmail.com" readonly>
-                        <button type="button" class="edit-btn" onclick="editField('email')">Change</button>
+                        <button type="button" class="edit-btn" onclick="editField('email')"><img src="pencil_icon.png" alt="Change"></button>
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="phone">Phone Number</label>
                     <div class="input-container">
                         <input type="text" id="phone" value="9134837948" readonly>
-                        <button type="button" class="edit-btn" onclick="editField('phone')">Change</button>
+                        <button type="button" class="edit-btn" onclick="editField('phone')"><img src="pencil_icon.png" alt="Change"></button>
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="dob">Date of Birth</label>
                     <div class="input-container">
                         <input type="date" id="dob" value="1999-07-16" readonly>
-                        <button type="button" class="edit-btn" onclick="editField('dob')">Change</button>
+                        <button type="button" class="edit-btn" onclick="editField('dob')"><img src="pencil_icon.png" alt="Change"></button>
                     </div>
                 </div>
                 
