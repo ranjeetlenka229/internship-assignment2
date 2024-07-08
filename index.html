@@ -20,14 +20,24 @@
     <div class="content">
         <div class="top-bar">
             <input type="text" id="search-input" placeholder="Search in Home">
-            <button id="search-button">Search</button>
+            <button id="search-button">"><img class="searcher" src="searcher_icon.png" alt="Search"></button>
         </div>
         <div class="summary">
-            <div class="box rounded">New Customers: 24</div>
-            <div class="box rounded">Department Activity: 434</div>
-            <div class="box rounded">Total Media Size: 10TB+</div>
+            <div class="box rounded">
+                <span class="title">New Customers</span>
+                <span class="number">24</span>
+            </div>
+            <div class="box rounded">
+                <span class="title">Department Activity</span>
+                <span class="number">434+</span>
+            </div>
+            <div class="box rounded">
+                <span class="title">Total Media Size</span>
+                <span class="number">10<sub>TB</sub></span>
+            </div>
         </div>
-        <h2>Customer Data</h2>
+        
+        <h2 class="customer">Customer Data</h2>
         <table>
             <thead>
                 <tr>
@@ -83,7 +93,7 @@
                 </tr>
             </tbody>
         </table>
-        <h2>Department Data</h2>
+        <h2 class="department">Department Data</h2>
         <table>
             <thead>
                 <tr>
@@ -141,11 +151,24 @@
         </table>
         <h2 class="media-heading">Media</h2>
         <div class="media-container">
-            <div class="media-box rounded">Audio: 14 TB</div>
-            <div class="media-box rounded">Video: 14 TB</div>
-            <div class="media-box rounded">Images: 14 TB</div>
-            <div class="media-box rounded">Files: 14 TB</div>
+            <div class="media-box rounded">
+                <span class="title">Audio</span>
+                <span class="number">14<sub>TB</sub></span>
+            </div>
+            <div class="media-box rounded">
+                <span class="title">Video</span>
+                <span class="number">14<sub>TB</sub></span>
+            </div>
+            <div class="media-box rounded">
+                <span class="title">Images</span>
+                <span class="number">14<sub>TB</sub></span>
+            </div>
+            <div class="media-box rounded">
+                <span class="title">Files</span>
+                <span class="number">14<sub>TB</sub></span>
+            </div>
         </div>
+        
     </div>
     <script src="scripts.js"></script>
 </body>
